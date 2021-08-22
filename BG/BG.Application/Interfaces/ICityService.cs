@@ -7,6 +7,6 @@ namespace BG.Application.Interfaces
 {
     public interface ICityService
     {
-        IEnumerable<CityViewModel> GetCities();
+        CityViewModel GetCities();
     }
 }

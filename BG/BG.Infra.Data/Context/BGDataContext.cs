@@ -9,6 +9,6 @@ namespace BG.Infra.Data.Context
     public class BGDataContext : DbContext
     {
         public BGDataContext(DbContextOptions<BGDataContext> opts) : base(opts) { }
-        public DbSet<City> City { get; set; }
+        public DbSet<City> Cities { get; set; }
     }
 }
