@@ -15,9 +15,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BG.Presentation", "BG.Prese
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BG.API", "BG.API", "{E148284C-6103-4D75-BF00-7A52B350FEF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BG.MVC", "BG.MVC\BG.MVC.csproj", "{83C5FBDA-9471-4988-B236-C7391250CE0D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83C5FBDA-9471-4988-B236-C7391250CE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C5FBDA-9471-4988-B236-C7391250CE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C5FBDA-9471-4988-B236-C7391250CE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C5FBDA-9471-4988-B236-C7391250CE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83C5FBDA-9471-4988-B236-C7391250CE0D} = {2AEF9BD0-D59E-4111-AC08-96FE92A3FEC4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F33675FD-A1A4-42FD-AC43-79983ADFF69B}
