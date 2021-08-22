@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BG.Infra.Data.Context;
+using BG.Infra.IoC;
 
 namespace BG.MVC
 {
@@ -38,6 +39,7 @@ namespace BG.MVC
             });
             services.AddControllersWithViews();
             services.AddRazorPages();
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,5 +72,11 @@ namespace BG.MVC
                 endpoints.MapRazorPages();
             });
         }
+
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
+        }
+
     }
 }

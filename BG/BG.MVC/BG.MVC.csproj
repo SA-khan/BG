@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BG.Infra.Data\BG.Infra.Data.csproj" />
+    <ProjectReference Include="..\BG.Infra.IoC\BG.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>
