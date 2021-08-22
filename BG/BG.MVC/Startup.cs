@@ -12,6 +12,7 @@ using BG.MVC.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BG.Infra.Data.Context;
 
 namespace BG.MVC
 {
@@ -32,6 +33,9 @@ namespace BG.MVC
                     Configuration.GetConnectionString("BGIdentityConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDbContext<BGDataContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("BGCoreConnection"));
+            });
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
